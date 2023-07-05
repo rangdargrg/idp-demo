@@ -22,8 +22,8 @@ import java.net.URLEncoder;
 import static org.springframework.http.HttpHeaders.CONTENT_DISPOSITION;
 import static org.springframework.http.MediaType.TEXT_XML_VALUE;
 
-@Component
-@Order(1)
+/*@Component
+@Order(1)*/
 public class MetaDataFilter extends OncePerRequestFilter {
     private final RequestMatcher requestMatcher = new AntPathRequestMatcher("/**/metadata", HttpMethod.GET.name());
     private final IdpConfig idpConfig;

@@ -35,8 +35,8 @@ import java.util.Objects;
 
 import static org.springframework.util.StringUtils.hasText;
 
-@Component
-@Order(3)
+/*@Component
+@Order(3)*/
 public class IdpAuthRequestFilter extends SamlFilter {
     RequestMatcher requestMatcher = new AntPathRequestMatcher("/**/SSO/alias/my-identity-provider-app", HttpMethod.GET.name());
     final IdpConfig idpConfig;

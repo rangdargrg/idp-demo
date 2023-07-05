@@ -45,8 +45,8 @@ import java.util.Objects;
 import static java.lang.String.format;
 import static org.springframework.util.StringUtils.hasText;
 
-@Component
-@Order(2)
+/*@Component
+@Order(2)*/
 public class IdpLoginFilter extends SamlFilter {
     RequestMatcher requestMatcher = new AntPathRequestMatcher("/**/init", HttpMethod.GET.name());
     RequestMatcher loginRequestMatcher = new AntPathRequestMatcher("/**/login", HttpMethod.GET.name());
